@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 body {
   display: flex;
@@ -23,42 +23,6 @@ body {
 *, *::before, *::after { box-sizing:border-box }
 
 
-
-.shape {
-  margin:0 auto;
-  aspect-ratio: 1;
-  position:relative;
-  
-  --width: 100%;
-  --scale: 1;
-  --opacity: 0.66;
-  --top: 0;
-  --left:0;
-  --path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  --background: linear-gradient( hotpink, red, orange, yellow, hotpink);
-  
-  --offset: 0deg;
-  --speed: 8000ms;
-  
-  clip-path: var(--path);
-  background: var(--background);
-  scale: var(--scale);
-  opacity: var(--opacity);
-  width:var(--width);
-  top:var(--top);
-  left:var(--left);
-  rotate: var(--offset);
-  
-  mix-blend-mode: difference;
-  
-  animation: turn var(--speed) linear forwards infinite;
-  
-  @keyframes turn {
-    to {
-      rotate: calc( var(--offset) + 1turn);
-    }
-  }
-}
 
 .blur-container {
   
@@ -77,84 +41,50 @@ body {
   
 }
 
-.ring {
-  position: relative;
-  width: 500px;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.ring i {
+.login { 
+  background-image: url('./png/login-transformed.png');
+  background-size: cover; /* Để ảnh phủ toàn bộ phần tử */
+  background-position: center; /* Để ảnh căn giữa */
+  background-repeat: no-repeat; /* Không lặp lại ảnh */
+  padding: auto; /* Tạo khoảng cách bên trong */
+  border-radius: auto; /* Bo góc phần tử login */
   position: absolute;
-  inset: 0;
-  border: 2px solid #fff;
-  transition: 0.5s;
-}
-.ring i:nth-child(1) {
-  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-  animation: animate 6s linear infinite;
-}
-.ring i:nth-child(2) {
-  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
-  animation: animate 4s linear infinite;
-}
-.ring i:nth-child(3) {
-  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
-  animation: animate2 10s linear infinite;
-}
-.ring:hover i {
-  border: 6px solid var(--clr);
-  filter: drop-shadow(0 0 20px var(--clr));
-}
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes animate2 {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-.login {
-  position: absolute;
-  width: 300px;
-  height: 100%;
+  width: 1200px;
+  height: 110%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  color: #724fdb
+  color: #724fdb;
+  bottom: 30px;
+  
 }
 .login h2 {
-  font-size: 2em;
-  color: #c65fcd;
+  font-size: 3em;
+  color: #ffffff;
 }
 .login .inputBx {
-  position: relative;
+  
+  position: center;
   width: 100%;
 }
 .login .inputBx input {
-  position: relative;
-  width: 100%;
-  padding: 12px 20px;
+  margin-top: 100px;
+  margin-left: 370px;
+  position: center;
+  width: 38%;
+  padding: 20px 10px;
   background: transparent;
   border: 2px solid #fff;
   border-radius: 40px;
   font-size: 1.5em;
-  color: #e296cb;
+  color: #ffffff;
   box-shadow: none;
   outline: none;
   text-align: center;
-  opacity: 0.4;
+  font-weight: bold;
+  
 }
 .login .inputBx input[type="submit"] {
   width: 100%;
@@ -164,7 +94,7 @@ body {
   cursor: pointer;
 }
 .login .inputBx input::placeholder {
-  color: rgba(183, 99, 181, 0.75);
+  color: #fff;
 }
 .login .links {
   position: relative;

@@ -11,15 +11,14 @@ if (event.key === "Enter") {
 }
 
 
-function checkLogin() {
-    var tenBe = document.getElementById('tenBe').value;
-    var ngaySinhBe = document.getElementById('ngaySinhBe').value;
+function checkLogin() 
+{
+    var pass = document.getElementById('pass').value;
   
-    // Kiểm tra thông tin đăng nhập (thay thế điều kiện này bằng thông tin thực của bạn)
-    if (tenBe === 'ngocthao' && ngaySinhBe === '09012005') {
-      // Chuyển hướng đến trang Google.com khi đăng nhập đúng
-      window.location.href = 'https://tientranba.github.io/02012024/';
-    } else {
-      alert('Có phải bồ tui khong đó???');
+    
+    if (pass === '1') 
+    {
+      window.location.href = 'https://www.facebook.com/quangvy.van.1';
     }
-  }
+}
+  

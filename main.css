@@ -42,7 +42,7 @@ body {
 }
 
 .login { 
-  background-image: url('./png/login-transformed.png');
+  
   background-size: cover; /* Để ảnh phủ toàn bộ phần tử */
   background-position: center; /* Để ảnh căn giữa */
   background-repeat: no-repeat; /* Không lặp lại ảnh */

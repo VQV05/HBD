@@ -22,7 +22,7 @@
     <div class="login">
       <h2></h2>
       <div class="inputBx">
-        <input type="text" id="pass" placeholder="Nhập Password" onkeypress="moveToPassword(event)">
+        <input type="password" id="pass" placeholder="Nhập Password" onkeypress="submitOnEnter(event)">
       </div>
       <div class="inputBx">
       <button type="submit" value="Enter" onclick="checkLogin()"></button>
@@ -33,6 +33,11 @@
 
 <img id="successGif1" src="https://i.pinimg.com/originals/17/e1/39/17e13977ee118b9e920b24326a49f1d6.gif" alt="Success GIF 1" style="display: none;">
 <img id="successGif2" src="./png/totoro.gif" alt="Success GIF 2" style="display: none;">
+<div class="loading-container">
+  <div class="loading-text">Loading...</div>
+  <div class="loading-bar"></div>
+  <img id="loadingGif" src="./png/1.gif" alt="Loading GIF" class="loading-gif">
+</div>
 <script src="main.js"></script>
 </body>
 </html>

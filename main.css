@@ -9,13 +9,16 @@
   font-family: 'Poppins', sans-serif;
 }
 body {
+  
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(to bottom, #add8e6, #dda0dd);
+  background-image:url('./png/back6.gif');
   width: 100%;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
   
 
 }
@@ -41,28 +44,33 @@ body {
   
 }
 
-.login { 
+.login {
   
   background-size: cover; /* Để ảnh phủ toàn bộ phần tử */
   background-position: center; /* Để ảnh căn giữa */
   background-repeat: no-repeat; /* Không lặp lại ảnh */
   padding: auto; /* Tạo khoảng cách bên trong */
-  border-radius: auto; /* Bo góc phần tử login */
+  border-radius: 30px; /* Bo góc phần tử login */
   position: absolute;
-  width: 1000px;
-  height: 110%;
+  width: 430px;
+  height: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 20px;
   color: #724fdb;
-  bottom: 30px;
+  bottom: 280px;
+  background-color: transparent;
+  border: rgba(255, 255, 255, 0.26);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  
   
 }
 .login h2 {
   font-size: 3em;
-  color: #ffffff;
+  color: purple;
 }
 .login .inputBx {
   
@@ -72,7 +80,7 @@ body {
 
 .login .inputBx input {
   position: center;
-  width: 38%;
+  width: 70%;
   padding: 20px 10px;
   background: transparent;
   border: 2px solid #fff;
@@ -114,12 +122,7 @@ body {
   text-align: center;
 }
 
-body {
-  background: linear-gradient(to bottom, #dda0dd, #add8e6); /* Bầu trời màu xanh nhạt */
-  height: 100vh;
-  margin: 0;
-  overflow: hidden;
-}
+
 
 .cloud-container {
   position: relative;
@@ -322,22 +325,10 @@ body {
 
 @keyframes moveGif {
   0% {
-    left: -5%; 
-}
-30% {
-  left: 10%; 
-}
-40% {
-  left: 20%; 
-}
-60% {
-  left: 40%; 
-}
-70% {
-  left: 50%; 
+    left: 0%; 
 }
 100% {
-  left: 90%; 
+  left: 100%; 
 }
 }
 
@@ -345,21 +336,8 @@ body {
   0% {
       width: 0%; 
   }
-  30% {
-      width: 30%; 
-  }
-  40% {
-      width: 30%; 
-  }
-  60% {
-      width: 60%; 
-  }
-  70% {
-      width: 60%; 
-  }
+  
   100% {
       width: 100%; 
   }
 }
-
-

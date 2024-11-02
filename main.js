@@ -1,29 +1,49 @@
-function submitOnEnter(event) {
-  if (event.key === "Enter") {
-    checkLogin(); // Gọi hàm checkLogin() khi nhấn Enter
-  }
-}
-
 function checkLogin() {
-  var pass = document.getElementById('pass').value;
+  const pass = document.getElementById('pass').value;
 
   if (pass === '1') {
-    document.querySelector('.login').classList.add('hidden');
-    document.querySelector('.loading-container').style.display = 'flex';
-    document.getElementById('successGif1').style.display = 'block';
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Chào mừng Kuromi.....",
+      showConfirmButton: false,
+      timer: 1500
+    });
 
-    setTimeout(function() {
-      window.location.href = 'https://www.facebook.com/quangvy.van.1';
-    }, 6000);
+    setTimeout(() => {
+      document.querySelector('.login').classList.add('hidden');
+      document.querySelector('.loading-container').style.display = 'flex';
+      document.getElementById('successGif1').style.display = 'block';
+
+      setTimeout(() => {
+        window.location.href = 'https://www.facebook.com/quangvy.van.1';
+      }, 6000);
+    }, 1500); // Đợi 1.5 giây trước khi hiện GIF và thanh loading
   } else if (pass === '2') {
-    document.querySelector('.login').classList.add('hidden');
-    document.querySelector('.loading-container').style.display = 'flex';
-    document.getElementById('successGif2').style.display = 'block';
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Chào mừng Totoro.....",
+      showConfirmButton: false,
+      timer: 1500
+    });
 
-    setTimeout(function() {
-      window.location.href = 'https://www.youtube.com/';
-    }, 6000);
+    setTimeout(() => {
+      document.querySelector('.login').classList.add('hidden');
+      document.querySelector('.loading-container').style.display = 'flex';
+      document.getElementById('successGif2').style.display = 'block';
+
+      setTimeout(() => {
+        window.location.href = 'https://www.youtube.com/';
+      }, 6000);
+    }, 1500); // Đợi 1.5 giây trước khi hiện GIF và thanh loading
   } else {
-    alert("Mật khẩu không đúng. Vui lòng thử lại!");
+    Swal.fire({
+      icon: 'error',
+      title: 'Opps!',
+      text: 'Mật khẩu bạn vừa nhập không đúng! Vui lòng nhập lại.',
+      timer: 1500,
+      showConfirmButton: false
+    });
   }
 }

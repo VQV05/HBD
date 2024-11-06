@@ -34,7 +34,7 @@ function checkLogin() {
       document.getElementById('successGif2').style.display = 'block';
 
       setTimeout(() => {
-        window.location.href = 'https://www.youtube.com/';
+        window.location.href = 'https://vqv05.github.io/finished/';
       }, 6000);
     }, 1500); // Đợi 1.5 giây trước khi hiện GIF và thanh loading
   } else {

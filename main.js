@@ -23,7 +23,7 @@ function checkLogin() {
     Swal.fire({
       position: "center",
       icon: "success",
-      title: "Chào mừng Totoro.....",
+      title: "Chào mừng Dâu.....",
       showConfirmButton: false,
       timer: 1500
     });

@@ -5,7 +5,7 @@ function checkLogin() {
     Swal.fire({
       position: "center",
       icon: "success",
-      title: "Chào mừng Kuromi.....",
+      title: "Chào mừng Kay.....",
       showConfirmButton: false,
       timer: 1500
     });
@@ -16,7 +16,7 @@ function checkLogin() {
       document.getElementById('successGif1').style.display = 'block';
 
       setTimeout(() => {
-        window.location.href = 'https://www.facebook.com/quangvy.van.1';
+        window.location.href = 'https://vqv05.github.io/finished-effect-2';
       }, 6000);
     }, 1500); // Đợi 1.5 giây trước khi hiện GIF và thanh loading
   } else if (pass === '2') {

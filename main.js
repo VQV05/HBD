@@ -1,7 +1,7 @@
 function checkLogin() {
   const pass = document.getElementById('pass').value;
 
-  if (pass === '1') {
+  if (pass === 'tramnamhanhphuc') {
     Swal.fire({
       position: "center",
       icon: "success",
@@ -19,7 +19,7 @@ function checkLogin() {
         window.location.href = 'https://vqv05.github.io/finished-effect-2';
       }, 6000);
     }, 1500); // Đợi 1.5 giây trước khi hiện GIF và thanh loading
-  } else if (pass === '2') {
+  } else if (pass === 'chucdaulsomcobo') {
     Swal.fire({
       position: "center",
       icon: "success",
